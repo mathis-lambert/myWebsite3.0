@@ -24,10 +24,17 @@ html,
 body {
   font-family: "FiraCode Medium";
   font-size: 16px;
-  background-color: #1b1838;
+  background-color: #161616;
   height: 200%;
   color: #fff;
   overflow-x: hidden;
+  background-color: white;
+}
+
+.flex-center, .menu .menu__container .menu__container__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -104,7 +111,7 @@ header .header-list .header-dark-mode .header-icon,
   height: -moz-fit-content;
   height: fit-content;
   width: 80%;
-  max-width: 500px;
+  max-width: 400px;
   background-color: rgba(243, 243, 243, 0.4);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -121,11 +128,14 @@ header .header-list .header-dark-mode .header-icon,
   padding: 0.4rem;
 }
 .menu .menu__container .menu__container__item a {
-  display: block;
   aspect-ratio: 1;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10vw;
   padding: 0.75rem 1rem;
+}
+.menu .menu__container .menu__container__item a svg {
+  width: 2rem;
+  height: auto;
 }
 
 .panel-container {
@@ -135,7 +145,7 @@ header .header-list .header-dark-mode .header-icon,
 
 .home-card {
   position: absolute;
-  background-color: #1b1838;
+  background-color: #161616;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,9 +194,12 @@ header .header-list .header-dark-mode .header-icon,
   max-width: 100%;
   padding: 0 2rem;
 }
-.home-content .home-title {
+.home-content .home-content-title {
   font-size: 2rem;
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-align: center;
   margin-bottom: 1rem;
+}
+.home-content p {
+  color: black;
 }/*# sourceMappingURL=style.css.map */

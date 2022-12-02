@@ -1,5 +1,5 @@
 @import "./include/fonts";
-$purple: #1b1838;
+$blue: #161616;
 $whiteFont: #fff;
 $blackFont: #000;
 
@@ -17,10 +17,17 @@ html,
 body {
   font-family: "FiraCode Medium";
   font-size: 16px;
-  background-color: $purple;
+  background-color: $blue;
   height: 200%;
   color: $whiteFont;
   overflow-x: hidden;
+  background-color: white;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -89,7 +96,7 @@ header,
   z-index: 100;
   height: fit-content;
   width: 80%;
-  max-width: 500px;
+  max-width: 400px;
 
   background-color: rgba($color: #f3f3f3, $alpha: 0.4);
   backdrop-filter: blur(5px);
@@ -110,13 +117,18 @@ header,
 
     .menu__container__item {
       a {
-        display: block;
+        @extend .flex-center;
         aspect-ratio: 1;
 
         background-color: rgba($color: #fff, $alpha: 0.6);
         border-radius: 10vw;
 
         padding: 0.75rem 1rem;
+
+        svg {
+          width: 2rem;
+          height: auto;
+        }
       }
     }
   }
@@ -129,7 +141,7 @@ header,
 
 .home-card {
   position: absolute;
-  background-color: $purple;
+  background-color: $blue;
 
   display: flex;
   flex-direction: column;
@@ -182,10 +194,13 @@ header,
   width: 100%;
   max-width: 100%;
   padding: 0 2rem;
-  .home-title {
+  .home-content-title {
     font-size: 2rem;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-align: center;
     margin-bottom: 1rem;
+  }
+  p {
+    color: black;
   }
 }

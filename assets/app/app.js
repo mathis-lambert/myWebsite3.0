@@ -10,5 +10,6 @@ gsap.to(".panel", {
     end: "+=100%",
     scrub: true,
     pin: true,
+    markers: false,
   },
 });
