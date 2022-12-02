@@ -13,53 +13,25 @@ header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); // Date in the past
 
   <!-- import css -->
   <link rel="stylesheet" href="assets/style/style.css" />
-
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
-  <?php include 'assets/include/header.php'; ?>
-  <div class="menu">
-    <div class="menu__container">
-      <div class="menu__container__item">
-        <a href="index.php" class="menu__container__item__link">O</a>
-      </div>
-      <div class="menu__container__item">
-        <a href="index.php" class="menu__container__item__link">O</a>
-      </div>
-      <div class="menu__container__item">
-        <a href="index.php" class="menu__container__item__link">O</a>
-      </div>
-      <div class="menu__container__item">
-        <a href="index.php" class="menu__container__item__link">O</a>
-      </div>
-    </div>
-  </div>
-  <div class="panel-container">
-    <div class="home-card panel">
-      <div class="home-card-content">
-        <div class="home-card-container">
-          <div class="top">
-            <img src="./assets/img/png/memoji.png" alt="Memoji of me !">
-          </div>
-          <div class="bottom">
-            <h1 class="home-card-title">Hi ! I'M MATHIS</h1>
-            <p class="home-card-text">a creative web developper based in france !</p>
-            <a href="assets/pdf/cv.pdf" class="home-card-button" download="cv-mathis-lambert">Télécharger mon CV</a>
-            <br>
-            <a href="#">more of my works</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="home-content">
-      <div class="home-content-text">
-        <h1 class="home-content-title">MORE ABOUT ME</h1>
-        <p class="home-content-subtitle">I’m Mathis Lambert, a junior front-end developper but i also like back-end :)Based in the south of france i’m studying in IUT MMI (Toulon, 83) .</p>
-      </div>
-    </div>
+  <div class="container">
+    <img src="./assets/img/png/memoji.png" alt="Memoji">
+    <p>Mathis Lambert</p>
+    <h1>Bienvenue sur mon portfolio</h1>
+    <p>
+      Encore un peu de patience !
+      <br />
+      Le site est en cours de construction.
+    </p>
+    <br>
+    <p>Suivez moi sur LinkedIn :</p>
+    <a href="https://linkedin.com/in/mathis-lambert/">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+      </svg>
+    </a>
   </div>
   <!-- Javascript import files -->
   <script src="./assets/app/app.js"></script>
