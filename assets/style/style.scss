@@ -3,6 +3,9 @@ $blue: #161616;
 $whiteFont: #fff;
 $blackFont: #000;
 
+/* Imports */
+@import "components/cursor";
+
 /* reset */
 *,
 :before,
